@@ -1,0 +1,13 @@
+.intro-bvn {
+  font-family: Roboto,Charcoal, sans-serif;
+  color:#6b87b9;
+  font-size: 25px;
+}
+.intro-nom {
+  font-family: Impact, Charcoal, sans-serif;
+  color: #6b87b9;
+  font-size: 60px;
+}
+.intro{
+  height: 100vh;
+}

@@ -6,7 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cv-etudes.component.css']
 })
 export class CvEtudesComponent implements OnInit {
-
+  etudes = [{
+    periode : '',
+    lieu : '',
+    diplome: '',
+    themes : ['', '']
+  },
+    {
+    periode : '',
+    lieu : '',
+    diplome: '',
+    themes : ['', '']
+    }];
   constructor() { }
 
   ngOnInit(): void {

@@ -20,6 +20,7 @@ import { CvCompetencesComponent } from './cv/cv-competences/cv-competences.compo
 import { CvRealisationsComponent } from './cv/cv-realisations/cv-realisations.component';
 import { CvExperiencesComponent } from './cv/cv-experiences/cv-experiences.component';
 import { CvContactComponent } from './cv/cv-contact/cv-contact.component';
+import { CvPresentationComponent } from './cv/cv-presentation/cv-presentation.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CvContactComponent } from './cv/cv-contact/cv-contact.component';
     CvCompetencesComponent,
     CvRealisationsComponent,
     CvExperiencesComponent,
-    CvContactComponent
+    CvContactComponent,
+    CvPresentationComponent
   ],
   imports: [
     BrowserModule,

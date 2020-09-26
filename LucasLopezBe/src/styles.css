@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+.bot-background{
+  padding: 25px;
+  margin: 0;
+  width:100vw;
+  margin: 0 0 0 calc((100% - 100vw) / 2);
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.bot-background h4{
+  color:#29203f;
+  text-align: center;
+  text-decoration:underline;
+}
+.white-background h4{
+  text-align: center;
+  text-decoration: underline;
+}
+.white-background {
+  color:white;
+  padding:25px;
+  width:100vw;
+  margin: 0 0 0 calc((100% - 100vw) / 2);
+  background-image: url('./assets/botbg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
