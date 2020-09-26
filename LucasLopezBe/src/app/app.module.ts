@@ -14,6 +14,12 @@ import {FormsModule} from '@angular/forms';
 import { ExercicesComponent } from './exercices/exercices.component';
 import { CVComponent } from './cv/cv.component';
 import { CvFooterComponent } from './cv/cv-footer/cv-footer.component';
+import { CvIntroComponent } from './cv/cv-intro/cv-intro.component';
+import { CvEtudesComponent } from './cv/cv-etudes/cv-etudes.component';
+import { CvCompetencesComponent } from './cv/cv-competences/cv-competences.component';
+import { CvRealisationsComponent } from './cv/cv-realisations/cv-realisations.component';
+import { CvExperiencesComponent } from './cv/cv-experiences/cv-experiences.component';
+import { CvContactComponent } from './cv/cv-contact/cv-contact.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +33,13 @@ import { CvFooterComponent } from './cv/cv-footer/cv-footer.component';
     CdbExercice6Component,
     ExercicesComponent,
     CVComponent,
-    CvFooterComponent
+    CvFooterComponent,
+    CvIntroComponent,
+    CvEtudesComponent,
+    CvCompetencesComponent,
+    CvRealisationsComponent,
+    CvExperiencesComponent,
+    CvContactComponent
   ],
   imports: [
     BrowserModule,
