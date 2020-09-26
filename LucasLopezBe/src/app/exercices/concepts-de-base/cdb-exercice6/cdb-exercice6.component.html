@@ -1,0 +1,9 @@
+<input (keydown.enter)="supprimerValeur()" [(ngModel)]="entree" type="text">
+
+<button (click)="supprimerValeur()">Valider</button>
+<p>Taille de la liste: {{nombres.length}}</p>
+<table>
+  <tr *ngFor="let nb of nombres">
+    <td>{{nb}}</td>
+  </tr>
+</table>
