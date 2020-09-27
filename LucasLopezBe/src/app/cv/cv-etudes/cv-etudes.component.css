@@ -1,1 +1,24 @@
-
+.box-presentation {
+  background: white;
+  width: 70%;
+  margin: 10px auto;
+  padding: 0;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+  height: 100%;
+  color:#34495e;
+}
+.box-outer{
+  padding: 30px 0;
+}
+.li-box{
+  list-style: none;
+  display: inline-block;
+  color: #ecf0f1;
+  margin: 5px 5px 0 5px;
+  background: #34495e;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: default;
+}

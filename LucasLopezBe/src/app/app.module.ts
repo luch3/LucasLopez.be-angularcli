@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule} from './app-routing/app-routing.module';
+import { AnimateOnScrollModule} from 'ng2-animate-on-scroll';
+
 
 import { AppComponent } from './app.component';
 import { ConceptsDeBaseComponent } from './exercices/concepts-de-base/concepts-de-base.component';
@@ -52,6 +54,7 @@ library.add(fas);
     FormsModule,
     AppRoutingModule,
     FontAwesomeModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

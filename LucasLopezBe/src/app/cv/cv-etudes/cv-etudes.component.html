@@ -1,6 +1,20 @@
 <div class="white-background">
-  <h4>cv-etudes works!</h4>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut fugiat fugit incidunt nesciunt quas quo? Atque consequatur delectus, doloribus enim esse, fugiat ipsa molestias nisi officiis repudiandae tempore ut.
-  </p>
+  <h4>Etudes</h4>
+  <div class="container-fluid">
+    <div class="row justify-content-around">
+      <div *ngFor="let e of this.etudes; let even = even; let odd = odd" class="col-sm-6 col-lg-5 box-outer animated" animateOnScroll animationName="animated {{slideLeftOrRight(odd)}}" offset="120">
+        <div class="box-presentation">
+          <p><i class="fa fa-clock-o"></i>{{e.periode}}</p>
+          <p><i class="fa fa-graduation-cap fa-3x"></i></p>
+          <p style="color:darkred;font-size: 30px">{{e.lieu}}</p>
+          <p style="font-size: 26px;border-bottom: #3c3f41;border-bottom-style: solid">{{e.diplome}}</p>
+
+          <div><ul style="list-style-type: none;padding:0">
+            <li *ngFor="let t of e.themes" class="li-box">{{t}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
