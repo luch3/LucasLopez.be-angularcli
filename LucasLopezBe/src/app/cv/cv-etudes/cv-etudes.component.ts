@@ -19,7 +19,6 @@ export class CvEtudesComponent implements OnInit {
     themes : ['Programmation', 'Web', 'Base de données', 'Réseau']
     }];
   constructor() { }
-
   ngOnInit(): void {
   }
 

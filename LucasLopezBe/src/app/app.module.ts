@@ -26,6 +26,7 @@ import { CvPresentationComponent } from './cv/cv-presentation/cv-presentation.co
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 library.add(fas);
 
 @NgModule({
@@ -54,7 +55,8 @@ library.add(fas);
     FormsModule,
     AppRoutingModule,
     FontAwesomeModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

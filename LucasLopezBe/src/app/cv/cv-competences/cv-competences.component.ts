@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvCompetencesComponent implements OnInit {
 
+  technos = [{
+    path: 'angularjs-3-1175272.svg',
+    tooltip: 'Angular',
+  }, {
+    path: 'angularjs-3-1175272.svg',
+    tooltip: 'Angular',
+  }];
   constructor() { }
 
   ngOnInit(): void {

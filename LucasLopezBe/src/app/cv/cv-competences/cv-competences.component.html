@@ -1,5 +1,10 @@
 <div class="bot-background">
-  <h4>cv-competences works!</h4>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore dolorem expedita fuga harum incidunt ipsam laborum modi mollitia officiis perferendis qui quis reiciendis reprehenderit, sed tenetur ut? Ex, nesciunt?</p>
+  <h4>Mes compétences</h4>
+  <div class="container-fluid">
+    <div class="row">
+      <div *ngFor="let t of this.technos">
+        <img ngbTooltip="{{t.tooltip.toString()}}" style="height: 60px; width: auto"  src="../../../assets/logo/{{t.path.toString()}}">
+      </div>
+    </div>
+  </div>
 </div>
