@@ -9,21 +9,18 @@
       <div class="col-lg-6 col-sm-9 align-self-center">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto deleniti error esse et eveniet fugiat hic in molestiae molestias nam nemo nesciunt non perferendis quaerat recusandae rem suscipit, voluptatem?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem debitis facere harum, hic iure, labore laboriosam minima, molestiae natus nostrum officiis omnis quibusdam tempore ullam vel. Necessitatibus, voluptas.</p>
+
       </div>
       <div class="col-lg-3 col-sm-9 align-self-center">
-        <div class="row">
-          <ul>
-            <h5 style="text-decoration: underline">Pq je suis bg ?</h5>
-            <li>Pcq</li>
-            <li>C'est</li>
-            <li>Comme ça</li>
-          </ul>
+        <div class="row justify-content-center">
+          <table>
+            <th colspan="2" class="text-center"><h5 style="text-decoration: underline;color: lightseagreen">Atouts</h5></th>
+            <tr *ngFor="let a of listeStr"><td><i class="fa fa-check text-success"></i></td><td>{{a}}</td></tr>
+          </table>
         </div>
-        <div class="row">
-          <div (click)="goToLink('https://github.com/luch3')"><i class="fa fa-github fa-3x"></i></div>
-        </div>
-        <div class="row">
-
+        <div class="row justify-content-center">
+          <div (click)="goToLink('https://github.com/luch3')"><i class="fa fa-github-square fa-3x"></i></div>
+          <div (click)="goToLink('https://www.linkedin.com/in/lucas-lopez-9691111a2/')"><i class="fa fa-linkedin-square fa-3x"></i></div>
         </div>
       </div>
     </div>
