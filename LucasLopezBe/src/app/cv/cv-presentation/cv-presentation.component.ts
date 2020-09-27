@@ -12,4 +12,8 @@ export class CvPresentationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goToLink(url: string): void {
+    window.open(url, '_blank');
+  }
+
 }

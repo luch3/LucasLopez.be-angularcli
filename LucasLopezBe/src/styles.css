@@ -31,3 +31,7 @@
   background-size: cover;
   background-position: center;
 }
+html{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

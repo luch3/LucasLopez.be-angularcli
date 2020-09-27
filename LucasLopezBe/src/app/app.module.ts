@@ -21,6 +21,10 @@ import { CvRealisationsComponent } from './cv/cv-realisations/cv-realisations.co
 import { CvExperiencesComponent } from './cv/cv-experiences/cv-experiences.component';
 import { CvContactComponent } from './cv/cv-contact/cv-contact.component';
 import { CvPresentationComponent } from './cv/cv-presentation/cv-presentation.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+library.add(fas);
 
 @NgModule({
   declarations: [
@@ -47,6 +51,7 @@ import { CvPresentationComponent } from './cv/cv-presentation/cv-presentation.co
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
