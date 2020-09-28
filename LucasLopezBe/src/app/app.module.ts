@@ -27,6 +27,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CvNavbarComponent } from './cv/cv-navbar/cv-navbar.component';
 library.add(fas);
 
 @NgModule({
@@ -48,7 +49,8 @@ library.add(fas);
     CvRealisationsComponent,
     CvExperiencesComponent,
     CvContactComponent,
-    CvPresentationComponent
+    CvPresentationComponent,
+    CvNavbarComponent
   ],
   imports: [
     BrowserModule,
