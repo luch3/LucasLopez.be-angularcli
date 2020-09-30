@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvNavbarComponent implements OnInit {
   activeId: any;
+  showNavbar = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleNavbar(): void{
+    this.showNavbar = !this.showNavbar;
+  }
 }

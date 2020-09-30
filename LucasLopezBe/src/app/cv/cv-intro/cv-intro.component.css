@@ -1,13 +1,21 @@
 .intro-bvn {
   font-family: Roboto,Charcoal, sans-serif;
-  color:#6b87b9;
+  color:whitesmoke;
   font-size: 25px;
 }
 .intro-nom {
   font-family: Impact, Charcoal, sans-serif;
-  color: #6b87b9;
+  color: whitesmoke;
   font-size: 60px;
 }
 .intro{
   height: 100vh;
+}
+.background{
+  background-image: url('../../../assets/topbg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }

@@ -1,10 +1,11 @@
 <div class="bot-background">
-  <h4>Mes compétences</h4>
+  <h4 style="margin-bottom: 50px">Mes compétences</h4>
   <div class="container-fluid">
-    <div class="row">
-      <div *ngFor="let t of this.technos">
+    <div class="row justify-content-center">
+      <div *ngFor="let t of this.technos" class="row justify-content-center col-lg-2 col-md-3 col-sm-4 col-5">
         <img ngbTooltip="{{t.tooltip.toString()}}" style="height: 60px; width: auto"  src="../../../assets/logo/{{t.path.toString()}}">
       </div>
     </div>
   </div>
 </div>
+

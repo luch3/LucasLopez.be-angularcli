@@ -9,9 +9,9 @@
           <p style="color:darkred;font-size: 30px">{{e.lieu}}</p>
           <p style="font-size: 26px;border-bottom: #3c3f41;border-bottom-style: solid">{{e.diplome}}</p>
 
-          <div><ul style="list-style-type: none;padding:0">
-            <li *ngFor="let t of e.themes" class="li-box">{{t}}</li>
-            </ul>
+          <div><table style="width:100%;border-collapse: separate;border-spacing: 5px">
+            <tr *ngFor="let t of e.themes"><td class="li-box">{{t}}</td></tr>
+            </table>
           </div>
         </div>
       </div>

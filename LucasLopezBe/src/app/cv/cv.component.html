@@ -1,13 +1,26 @@
-<app-cv-navbar></app-cv-navbar>
+
 <div class="background">
-  <div class="container cv-container">
-    <app-cv-intro></app-cv-intro>
-    <app-cv-presentation></app-cv-presentation>
+  <section id="intro">
+  <app-cv-intro></app-cv-intro>
+  </section>
+  <app-cv-navbar></app-cv-navbar>
+  <section id="presentation">
+  <app-cv-presentation></app-cv-presentation>
+  </section>
+  <section id="etudes">
     <app-cv-etudes></app-cv-etudes>
-    <app-cv-competences></app-cv-competences>
-    <app-cv-experiences></app-cv-experiences>
-    <app-cv-realisations></app-cv-realisations>
-    <app-cv-contact></app-cv-contact>
-  </div>
-  <app-cv-footer></app-cv-footer>
+  </section>
+  <section id="competences">
+  <app-cv-competences></app-cv-competences>
+  </section>
+  <section id="experiences">
+  <app-cv-experiences></app-cv-experiences>
+  </section>
+  <section id="realisations">
+  <app-cv-realisations></app-cv-realisations>
+  </section>
+  <section id="contact">
+  <app-cv-contact></app-cv-contact>
+  </section>
+<app-cv-footer></app-cv-footer>
 </div>

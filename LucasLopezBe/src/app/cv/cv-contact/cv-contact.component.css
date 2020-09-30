@@ -1,0 +1,6 @@
+.contact a, .contact i {
+  color:black;
+}
+.contact a {
+  text-decoration: underline;
+}

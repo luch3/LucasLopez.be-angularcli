@@ -1,11 +1,3 @@
-.background{
-  background-image: url('../../assets/topbg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-}
 app-cv-footer {
   background:#3c3f41;
   position:absolute;
