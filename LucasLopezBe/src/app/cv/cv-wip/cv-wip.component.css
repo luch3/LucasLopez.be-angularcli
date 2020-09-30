@@ -1,0 +1,11 @@
+.obl {
+  background-color: red;
+  position: fixed;
+  width: 300px;
+  top:0;
+  padding-left:25px;
+  z-index: 999999999;
+  -ms-transform: skewY(-35deg);
+  -webkit-transform: skewY(-35deg);
+  transform: skewY(-35deg);
+}
