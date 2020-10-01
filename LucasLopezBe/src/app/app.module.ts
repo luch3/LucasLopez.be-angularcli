@@ -29,6 +29,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CvNavbarComponent } from './cv/cv-navbar/cv-navbar.component';
 import {CvWipComponent} from './cv/cv-wip/cv-wip.component';
+import { CdbExercice7Component } from './exercices/concepts-de-base/cdb-exercice7/cdb-exercice7.component';
 library.add(fas);
 
 @NgModule({
@@ -53,6 +54,7 @@ library.add(fas);
     CvPresentationComponent,
     CvNavbarComponent,
     CvWipComponent,
+    CdbExercice7Component,
   ],
   imports: [
     BrowserModule,
