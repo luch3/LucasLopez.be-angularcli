@@ -8,6 +8,7 @@
   padding: 15px;
   height: 100%;
   color:#34495e;
+  box-shadow: 0px 0px 5px rgb(34, 33, 33);
 }
 .box-outer{
   padding: 30px 0;

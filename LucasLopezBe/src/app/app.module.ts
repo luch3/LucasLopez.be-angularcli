@@ -30,6 +30,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CvNavbarComponent } from './cv/cv-navbar/cv-navbar.component';
 import {CvWipComponent} from './cv/cv-wip/cv-wip.component';
 import { CdbExercice7Component } from './exercices/concepts-de-base/cdb-exercice7/cdb-exercice7.component';
+import {CollapseModule} from 'ngx-bootstrap/collapse';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AlertModule} from 'ngx-bootstrap/alert';
+import { TemplateDrivenComponent } from './forms/template-driven/template-driven.component';
+
 library.add(fas);
 
 @NgModule({
@@ -55,6 +60,7 @@ library.add(fas);
     CvNavbarComponent,
     CvWipComponent,
     CdbExercice7Component,
+    TemplateDrivenComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +68,10 @@ library.add(fas);
     AppRoutingModule,
     FontAwesomeModule,
     AnimateOnScrollModule.forRoot(),
-    NgbModule
+    AlertModule.forRoot(),
+    NgbModule,
+    BrowserAnimationsModule,
+    CollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

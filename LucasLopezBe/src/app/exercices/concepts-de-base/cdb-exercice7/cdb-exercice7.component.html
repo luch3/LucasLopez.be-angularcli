@@ -1,1 +1,9 @@
-<p>cdb-exercice7 works!</p>
+<div style="min-height:500px">
+  <input type="number" placeholder="1-100" [(ngModel)]="num" (ngModelChange)="numValidation()"><button style="margin-left: 20px" class="btn btn-success" (click)="alertNum()">Valider</button>
+  <p>{{num}}</p>
+  <div>
+  <alert type="success" [dismissible]="true" [dismissOnTimeout]="5000">
+    <strong>Well done!</strong> You successfully read this important alert message.
+  </alert>
+  </div>
+</div>

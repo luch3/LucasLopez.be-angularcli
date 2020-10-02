@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ConceptsDeBaseComponent } from '../exercices/concepts-de-base/concepts-de-base.component';
 import { ExercicesComponent} from '../exercices/exercices.component';
 import { CVComponent} from '../cv/cv.component';
+import {TemplateDrivenComponent} from '../forms/template-driven/template-driven.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: '',
     component: CVComponent,
+  },
+  {
+    path: 'forms',
+    component: TemplateDrivenComponent,
   },
 ];
 

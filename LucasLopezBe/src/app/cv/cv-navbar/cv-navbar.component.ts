@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvNavbarComponent implements OnInit {
   activeId: any;
-  showNavbar = false;
+  isCollapsed = true;
 
   constructor() { }
 
@@ -15,6 +15,6 @@ export class CvNavbarComponent implements OnInit {
   }
 
   toggleNavbar(): void{
-    this.showNavbar = !this.showNavbar;
+    this.isCollapsed = !this.isCollapsed;
   }
 }
