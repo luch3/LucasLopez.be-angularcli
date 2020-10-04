@@ -1,5 +1,20 @@
 <div class="white-background">
-  <h4>cv-experiences works!</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto aspernatur, at dignissimos excepturi exercitationem fugit harum id illo molestias nesciunt, nulla recusandae repellat, veniam voluptate! Culpa ex expedita officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, distinctio doloremque dolores ea excepturi explicabo fugiat in, ipsum laboriosam, necessitatibus neque non optio quod recusandae repudiandae tempora vel voluptates?</p>
+  <h4>Mes expériences</h4>
+  <div class="container">
+    <ul class="timeline">
+      <li *ngFor="let exp of experiences; let even = even; let odd = odd" [ngClass]="{'timeline-inverted':odd}">
+        <div class="timeline-badge success"><i class="fa fa-check-square-o"></i></div>
+        <div class="timeline-panel" [attr.data-aos]="odd ? 'fade-left' : 'fade-right'">
+          <div class="timeline-heading">
+            <h5 class="timeline-title">{{exp.titre}}</h5>
+            <p><small class="text-muted"><i class="fa fa-clock-o"></i>{{exp.date}}</small></p>
+          </div>
+          <div class="timeline-body">
+            <p>{{exp.description}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 

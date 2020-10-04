@@ -34,6 +34,7 @@ import {CollapseModule} from 'ngx-bootstrap/collapse';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AlertModule} from 'ngx-bootstrap/alert';
 import { TemplateDrivenComponent } from './forms/template-driven/template-driven.component';
+import {CarouselModule} from 'ngx-bootstrap/carousel';
 
 library.add(fas);
 
@@ -71,7 +72,8 @@ library.add(fas);
     AlertModule.forRoot(),
     NgbModule,
     BrowserAnimationsModule,
-    CollapseModule
+    CollapseModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

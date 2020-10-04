@@ -1,4 +1,19 @@
 <div class="bot-background">
-  <h4>cv-realisations works!</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores at deserunt dolores esse et eum facere fugit itaque molestias, nulla, officiis optio quaerat quibusdam sapiente similique unde, voluptates voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut debitis, dicta dolor dolore dolorem dolorum, fuga harum illo ipsum minima minus molestias nesciunt quam quia sapiente tenetur totam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur culpa earum error fugiat, harum omnis ullam. Blanditiis id impedit inventore, libero nulla quis ullam! Eligendi facilis nesciunt optio pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi doloremque eos, fuga id pariatur reprehenderit sed! Blanditiis culpa cumque deserunt illum impedit labore maiores nesciunt nostrum quas, quis reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam aut deserunt distinctio dolorem est explicabo incidunt laudantium libero maiores neque, nesciunt pariatur perferendis quasi ullam ut voluptatem voluptates voluptatibus!</p>
+  <h4>Mes réalisations</h4>
+  <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-lg-11 col-md-11 col-sm-12">
+        <carousel [interval]="0" [isAnimated]="true">
+          <slide *ngFor="let rea of realisations; let index = index">
+            <img [src]="rea.image" alt="image slide" style="display: block; width: 100%;">
+            <div class="bg-dark text-white text-center" style="padding-bottom: 20px">
+              <h5>{{rea.titre}}</h5>
+              <p style="padding: 20px">{{rea.description}}</p>
+              <p>{{rea.langages}}</p>
+            </div>
+          </slide>
+        </carousel>
+    </div>
+    </div>
+  </div>
 </div>

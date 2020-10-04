@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvPresentationComponent implements OnInit {
 
-  listeStr: string[] = ['Travail d\'équipe', 'Flexible', 'Positif', 'Fiable', 'Passionné', 'Motivé', 'Autodidacte', 'Curieux', 'Le masque me va bien'];
+  listeStr: string[] = ['Travail d\'équipe', 'Flexible', 'Positif(Pas au covid)', 'Fiable', 'Passionné', 'Motivé', 'Autodidacte', 'Curieux', 'Le masque me va bien'];
   constructor() { }
 
   ngOnInit(): void {
