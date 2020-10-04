@@ -9,7 +9,7 @@ export class CvRealisationsComponent implements OnInit {
   realisations = [{
     image: '/assets/rea/cvAngular.png',
     titre: 'Mon CV',
-    description: 'Ce site web que j\'ai réalisé afin de m\'aider dans ma recherche de stage ainsi qu\'à m\'exercer avec Angular.',
+    description: 'J\'ai réalisé ce site web afin de m\'aider dans ma recherche de stage et de m\'exercer avec le framework Angular.',
     langages: 'Angular, HTML, CSS et TS'
   }, {
     image: '/assets/rea/clueHunter.png',
