@@ -4,6 +4,7 @@ import { ConceptsDeBaseComponent } from '../exercices/concepts-de-base/concepts-
 import { ExercicesComponent} from '../exercices/exercices.component';
 import { CVComponent} from '../cv/cv.component';
 import {TemplateDrivenComponent} from '../forms/template-driven/template-driven.component';
+import {FormsComponent} from '../forms/forms.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'forms',
-    component: TemplateDrivenComponent,
+    component: FormsComponent,
   },
 ];
 

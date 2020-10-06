@@ -12,7 +12,7 @@ import { CdbExercice3Component } from './exercices/concepts-de-base/cdb-exercice
 import { CdbExercice4Component } from './exercices/concepts-de-base/cdb-exercice4/cdb-exercice4.component';
 import { CdbExercice5Component } from './exercices/concepts-de-base/cdb-exercice5/cdb-exercice5.component';
 import { CdbExercice6Component } from './exercices/concepts-de-base/cdb-exercice6/cdb-exercice6.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ExercicesComponent } from './exercices/exercices.component';
 import { CVComponent } from './cv/cv.component';
 import { CvFooterComponent } from './cv/cv-footer/cv-footer.component';
@@ -35,6 +35,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AlertModule} from 'ngx-bootstrap/alert';
 import { TemplateDrivenComponent } from './forms/template-driven/template-driven.component';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
+import { ReactiveComponent } from './forms/reactive/reactive.component';
+import { FormsComponent } from './forms/forms.component';
 
 library.add(fas);
 
@@ -62,19 +64,22 @@ library.add(fas);
     CvWipComponent,
     CdbExercice7Component,
     TemplateDrivenComponent,
+    ReactiveComponent,
+    FormsComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    AnimateOnScrollModule.forRoot(),
-    AlertModule.forRoot(),
-    NgbModule,
-    BrowserAnimationsModule,
-    CollapseModule,
-    CarouselModule.forRoot()
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        FontAwesomeModule,
+        AnimateOnScrollModule.forRoot(),
+        AlertModule.forRoot(),
+        NgbModule,
+        BrowserAnimationsModule,
+        CollapseModule,
+        CarouselModule.forRoot(),
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
