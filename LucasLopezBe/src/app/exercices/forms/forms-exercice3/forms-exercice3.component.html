@@ -1,40 +1,41 @@
 <div class="container" style="margin-top: 30px">
   <div class="row">
-    <form class="form-group col-5" [formGroup]="formNewPerson">
-      <input class="form-control" [ngClass]="{invalid: isPseudoInvalid()}" type="text" formControlName="pseudo" placeholder="pseudo">
-      <input class="form-control" [ngClass]="{invalid : isPasswordInvalid()}" type="password" formControlName="mdp" placeholder="mdp">
-      <input class="form-control" [ngClass]="{invalid : isMailInvalid()}" type="email" placeholder="mail" formControlName="mail">
+    <form class="form-group col-5" [formGroup]="formNewPerson" (ngSubmit)="logPersonne()" name="ex3Form">
+      <input name="pseudo" class="form-control" (dblclick)="defaultFill()" [ngClass]="{invalid: isPseudoInvalid()}" type="text" formControlName="pseudo" placeholder="pseudo">
+      <input name="mdp" class="form-control" [ngClass]="{invalid : isPasswordInvalid()}" type="password" formControlName="mdp" placeholder="mdp">
+      <input name="mail" class="form-control" [ngClass]="{invalid : isMailInvalid()}" type="email" placeholder="mail" formControlName="mail">
       <div class="form-group">
-        <input class="form-control" [ngClass]="{invalid : isDateInvalid()}" formControlName="date" type="date" name="date" id="date">
+        <input name="date" class="form-control" [ngClass]="{invalid : isDateInvalid()}" formControlName="date" type="date" name="date" id="date">
       </div>
       <div class="form-group" formGroupName="autre">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="cbPour" formControlName="poursuivre">
+          <input name="poursuivre" class="form-check-input" type="checkbox" id="cbPour" formControlName="poursuivre">
           <label class="form-check-label" for="cbPour">Poursuivre le cours ?</label>
         </div>
         <div class="form-group">
           <label class="form-text">Comment avez vous appris Angular ?</label>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" value="ecole" id="r1" formControlName="connaissance">
+            <input name="connaissance" class="form-check-input" type="radio" value="ecole" id="r1" formControlName="connaissance">
             <label class="form-check-label" for="r1">École</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" value="autodidacte" id="r2" formControlName="connaissance">
+            <input name="connaissance" class="form-check-input" type="radio" value="autodidacte" id="r2" formControlName="connaissance">
             <label class="form-check-label" for="r2">Autodidacte</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" value="lesDeux" id="r3" formControlName="connaissance">
+            <input name="connaissance" class="form-check-input" type="radio" value="lesDeux" id="r3" formControlName="connaissance">
             <label class="form-check-label" for="r3">Les deux</label>
           </div>
         </div>
         <div class="form-group">
           <label class="form-text">Notez le cours de TI:</label>
-          <select class="custom-select" formControlName="note">
-            <option *ngFor="let n of notes" [ngValue]="n">{{n}}</option>
+          <select name="selectNote" class="custom-select" formControlName="note">
+            <option *ngFor="let n of notes" [ngValue]="n" name="options">{{n}}</option>
           </select>
         </div>
       </div>
-      <input class="btn btn-success" type="submit" [disabled]="formNewPerson.invalid">
+      <button name="reset" type="button" class="btn btn-danger" (click)="reset()">Reset</button>
+      <input name="submit" class="btn btn-success" type="submit" [disabled]="formNewPerson.invalid">
     </form>
     <div id="feedBackContainer" class="col-5 text-danger">
       <p *ngIf="isPseudoInvalid()">Un pseudo de minimum 5 caractères est requis</p>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AbstractControl, FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
+import {AbstractControl, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-forms-exercice3',
@@ -28,6 +28,30 @@ export class FormsExercice3Component implements OnInit {
   notes: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 
+  logPersonne(): any {
+    const pfg: FormGroup = this.formNewPerson;
+    const personne = {
+      pseudo : pfg.get('pseudo').value,
+      mdp: pfg.get('mdp').value,
+      mail : pfg.get('mail').value,
+      date : pfg.get('date').value,
+      poursuivre : pfg.get('autre').get('poursuivre').value,
+      connaissance : pfg.get('autre').get('connaissance').value,
+      note : pfg.get('autre').get('note').value
+    };
+    console.log(personne);
+    return personne;
+  }
+  reset(): void {
+    const pfg: FormGroup = this.formNewPerson;
+    pfg.get('pseudo').setValue('');
+    pfg.get('mdp').setValue('');
+    pfg.get('mail').setValue('');
+    pfg.get('date').setValue('');
+    pfg.get('autre').get('poursuivre').setValue('');
+    pfg.get('autre').get('connaissance').setValue('');
+    pfg.get('autre').get('note').setValue('');
+  }
 
   ngOnInit(): void {
   }
@@ -57,5 +81,17 @@ export class FormsExercice3Component implements OnInit {
   }
   isNoteInvalid(): boolean {
     return this.formNewPerson.get('autre').get('note').invalid && this.formNewPerson.get('autre').get('note').touched;
+  }
+
+
+  defaultFill(): void {
+    const pfg: FormGroup = this.formNewPerson;
+    pfg.get('pseudo').setValue('Pseudo');
+    pfg.get('mdp').setValue('Motd3passe');
+    pfg.get('mail').setValue('mail@student.helha.be');
+    pfg.get('date').setValue('1970-01-01');
+    pfg.get('autre').get('poursuivre').setValue('true');
+    pfg.get('autre').get('connaissance').setValue('lesDeux');
+    pfg.get('autre').get('note').setValue(10);
   }
 }
