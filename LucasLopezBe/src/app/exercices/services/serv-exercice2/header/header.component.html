@@ -1,0 +1,4 @@
+<div class="container">
+  <button class="btn btn-success" (click)="getAuthLog()">REFRESH</button>
+  <p *ngIf="this.auth">LogInfo: {{this.auth.mail + " "+this.auth.password}}</p>
+</div>

@@ -39,6 +39,11 @@ import { FormsExercice2Component } from './exercices/forms/forms-exercice2/forms
 import { FormsExercice3Component } from './exercices/forms/forms-exercice3/forms-exercice3.component';
 import {FormsComponent} from './exercices/forms/forms.component';
 import { DisplayServiceComponent } from './display-service/display-service.component';
+import { ServicesComponent } from './exercices/services/services.component';
+import { ServExercice1Component } from './exercices/services/serv-exercice1/serv-exercice1.component';
+import { ServExercice2Component } from './exercices/services/serv-exercice2/serv-exercice2.component';
+import { LoginComponent } from './exercices/services/serv-exercice2/login/login.component';
+import { HeaderComponent } from './exercices/services/serv-exercice2/header/header.component';
 
 library.add(fas);
 
@@ -70,6 +75,11 @@ library.add(fas);
     FormsExercice2Component,
     FormsExercice3Component,
     DisplayServiceComponent,
+    ServicesComponent,
+    ServExercice1Component,
+    ServExercice2Component,
+    LoginComponent,
+    HeaderComponent,
   ],
     imports: [
         BrowserModule,
