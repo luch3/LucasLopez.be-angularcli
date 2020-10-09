@@ -33,14 +33,12 @@ import { CdbExercice7Component } from './exercices/concepts-de-base/cdb-exercice
 import {CollapseModule} from 'ngx-bootstrap/collapse';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AlertModule} from 'ngx-bootstrap/alert';
-import { TemplateDrivenComponent } from './formsTh/template-driven/template-driven.component';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
-import { ReactiveComponent } from './formsTh/reactive/reactive.component';
-import { FormsThComponent } from './formsTh/forms.component';
 import { FormsExercice1Component } from './exercices/forms/forms-exercice1/forms-exercice1.component';
 import { FormsExercice2Component } from './exercices/forms/forms-exercice2/forms-exercice2.component';
 import { FormsExercice3Component } from './exercices/forms/forms-exercice3/forms-exercice3.component';
 import {FormsComponent} from './exercices/forms/forms.component';
+import { DisplayServiceComponent } from './display-service/display-service.component';
 
 library.add(fas);
 
@@ -67,13 +65,11 @@ library.add(fas);
     CvNavbarComponent,
     CvWipComponent,
     CdbExercice7Component,
-    TemplateDrivenComponent,
-    ReactiveComponent,
     FormsComponent,
     FormsExercice1Component,
     FormsExercice2Component,
     FormsExercice3Component,
-    FormsThComponent
+    DisplayServiceComponent,
   ],
     imports: [
         BrowserModule,

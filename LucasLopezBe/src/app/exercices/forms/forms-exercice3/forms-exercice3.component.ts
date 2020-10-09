@@ -35,7 +35,7 @@ export class FormsExercice3Component implements OnInit {
       mdp: pfg.get('mdp').value,
       mail : pfg.get('mail').value,
       date : pfg.get('date').value,
-      poursuivre : pfg.get('autre').get('poursuivre').value,
+      poursuivre : (pfg.get('autre').get('poursuivre').value === true ? true : false),
       connaissance : pfg.get('autre').get('connaissance').value,
       note : pfg.get('autre').get('note').value
     };
@@ -43,14 +43,7 @@ export class FormsExercice3Component implements OnInit {
     return personne;
   }
   reset(): void {
-    const pfg: FormGroup = this.formNewPerson;
-    pfg.get('pseudo').setValue('');
-    pfg.get('mdp').setValue('');
-    pfg.get('mail').setValue('');
-    pfg.get('date').setValue('');
-    pfg.get('autre').get('poursuivre').setValue('');
-    pfg.get('autre').get('connaissance').setValue('');
-    pfg.get('autre').get('note').setValue('');
+    this.formNewPerson.reset();
   }
 
   ngOnInit(): void {
@@ -86,12 +79,23 @@ export class FormsExercice3Component implements OnInit {
 
   defaultFill(): void {
     const pfg: FormGroup = this.formNewPerson;
-    pfg.get('pseudo').setValue('Pseudo');
+    /*pfg.get('pseudo').setValue('Pseudo');
     pfg.get('mdp').setValue('Motd3passe');
     pfg.get('mail').setValue('mail@student.helha.be');
     pfg.get('date').setValue('1970-01-01');
     pfg.get('autre').get('poursuivre').setValue('true');
     pfg.get('autre').get('connaissance').setValue('lesDeux');
-    pfg.get('autre').get('note').setValue(10);
+    pfg.get('autre').get('note').setValue(10);*/
+    pfg.setValue({
+      pseudo: 'Testdd',
+      mdp : 'Test3fjsdkjdfsdf',
+      mail : 'test@test.test',
+      date : '1970-01-01',
+      autre : {
+        poursuivre : false,
+        connaissance : 'lesDeux',
+        note : 9
+      }
+    });
   }
 }
