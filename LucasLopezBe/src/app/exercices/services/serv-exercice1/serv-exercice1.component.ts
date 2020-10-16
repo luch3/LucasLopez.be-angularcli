@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {User} from '../../../display-service/user';
-import {Subscription} from 'rxjs';
+import {Observable, Subscription} from 'rxjs';
 import {Person} from './person';
 import {PersonService} from './person.service';
 
@@ -13,11 +13,13 @@ export class ServExercice1Component implements OnInit, OnDestroy {
 
   persons: Person[];
   getPersonsSubscription: Subscription;
+  obsGetPerson$: Observable<Person[]>;
 
   constructor(private personService: PersonService) { }
 
   ngOnInit(): void {
     this.getPersons();
+    this.obsGetPerson$ = this.personService.getPersons();
   }
   ngOnDestroy(): void {
     this.getPersonsSubscription.unsubscribe();

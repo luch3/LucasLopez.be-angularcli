@@ -5,6 +5,7 @@ import { ExercicesComponent} from '../exercices/exercices.component';
 import { CVComponent} from '../cv/cv.component';
 import {FormsComponent} from '../exercices/forms/forms.component';
 import {DisplayServiceComponent} from '../display-service/display-service.component';
+import {CommunicationComponent} from '../exercices/communication/communication.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'service',
     component: DisplayServiceComponent,
+  },
+  {
+    path: 'communication',
+    component: CommunicationComponent,
   },
 ];
 

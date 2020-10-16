@@ -44,6 +44,16 @@ import { ServExercice1Component } from './exercices/services/serv-exercice1/serv
 import { ServExercice2Component } from './exercices/services/serv-exercice2/serv-exercice2.component';
 import { LoginComponent } from './exercices/services/serv-exercice2/login/login.component';
 import { HeaderComponent } from './exercices/services/serv-exercice2/header/header.component';
+import { CExercice1Component } from './exercices/communication/c-exercice1/c-exercice1.component';
+import { CExercice2Component } from './exercices/communication/c-exercice2/c-exercice2.component';
+import { CExercice3Component } from './exercices/communication/c-exercice3/c-exercice3.component';
+import { CExercice4Component } from './exercices/communication/c-exercice4/c-exercice4.component';
+import { EnfantExercice1Component } from './exercices/communication/c-exercice1/enfant-exercice1/enfant-exercice1.component';
+import { EnfantExercice3Component } from './exercices/communication/c-exercice3/enfant-exercice3/enfant-exercice3.component';
+import {EnfantExercice2Component} from './exercices/communication/c-exercice2/enfant-exercice2/enfant-exercice2.component';
+import {CommunicationComponent} from './exercices/communication/communication.component';
+import {CustomerContainerComponent} from './exercices/communication/c-exercice4/customer-container/customer-container.component';
+import {CustomersListComponent} from './exercices/communication/c-exercice4/customers-list/customers-list.component';
 
 library.add(fas);
 
@@ -80,6 +90,16 @@ library.add(fas);
     ServExercice2Component,
     LoginComponent,
     HeaderComponent,
+    CommunicationComponent,
+    CExercice1Component,
+    CExercice2Component,
+    CExercice3Component,
+    CExercice4Component,
+    EnfantExercice1Component,
+    EnfantExercice3Component,
+    EnfantExercice2Component,
+    CustomerContainerComponent,
+    CustomersListComponent,
   ],
     imports: [
         BrowserModule,
