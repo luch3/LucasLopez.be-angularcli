@@ -1,0 +1,11 @@
+<h1>
+  {{welcomeMessage|lowercase}}
+</h1>
+<p>
+  {{person|json}}
+</p>
+<ul>
+  <li *ngFor="let number of 10|generateArray:777">
+    {{number}}
+  </li>
+</ul>

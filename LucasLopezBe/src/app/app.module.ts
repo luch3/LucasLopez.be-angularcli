@@ -54,6 +54,8 @@ import {EnfantExercice2Component} from './exercices/communication/c-exercice2/en
 import {CommunicationComponent} from './exercices/communication/communication.component';
 import {CustomerContainerComponent} from './exercices/communication/c-exercice4/customer-container/customer-container.component';
 import {CustomersListComponent} from './exercices/communication/c-exercice4/customers-list/customers-list.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { GenerateArrayPipe } from './pipes/generate-array.pipe';
 
 library.add(fas);
 
@@ -100,6 +102,8 @@ library.add(fas);
     EnfantExercice2Component,
     CustomerContainerComponent,
     CustomersListComponent,
+    PipesComponent,
+    GenerateArrayPipe,
   ],
     imports: [
         BrowserModule,

@@ -12,7 +12,7 @@ export class CustomerContainerComponent implements OnInit {
 
   customers: Customers = [];
 
-  constructor(private eventBus:EventBus2Service) {
+  constructor(private eventBus: EventBus2Service) {
   }
 
   ngOnInit(): void {
@@ -22,9 +22,9 @@ export class CustomerContainerComponent implements OnInit {
 
   private getCustomers(): Customers {
     return [
-      {firstname: 'Test', lastname: 'Test'},
-      {firstname: 'Test2', lastname: 'Test2'},
-      {firstname: 'Test3', lastname: 'Test3'}
+      {firstname: 'Lucas', lastname: 'Lopez'},
+      {firstname: 'Zoé', lastname: 'Lopez'},
+      {firstname: 'Alexian', lastname: 'Moins'}
     ];
   }
 

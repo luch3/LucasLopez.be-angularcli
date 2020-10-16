@@ -14,14 +14,14 @@ export class CustomersListComponent implements OnInit {
   @Input() customers: Customers = [];
   @Output() customerDeleted: EventEmitter<Customer> = new EventEmitter<Customer>();
 
-  constructor(private eventBus:EventBus2Service) {
+  constructor(private eventBus: EventBus2Service) {
   }
 
   ngOnInit(): void {
   }
 
   delete(index: number) {
-    const customer:Customer = this.customers[index];
+    const customer: Customer = this.customers[index];
     this.customers.splice(index, 1);
     this.customerDeleted.next(customer);
     this.eventBus.next(
